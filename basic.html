@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>You</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Services Page</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; /* This will cover the entire container without stretching the image */
+    background-position: center;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-3 navbar-dark bg-dark  bg sticky-top shadow">
+        <div class="container-fluid mx-5 ">
+            <a class="navbar-brand" href="#">Arnold <span style="color: red;"><b>Gym</b></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="gj">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ui.html" style="color:white;font-size: larger;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.php #testimonials" style="color: white;font-size: larger;">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.php #about" style="color: white;font-size: larger;">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.php #services" style="color:white;font-size: larger;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.php #services" style="color: white;font-size: larger;">Trainee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;font-size: larger;">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer" style="color: white;font-size: larger;">ContactUs</a>
+                    </li>
+                    
+                </ul>
+                <!-- <span class="navbar-text">
+                    <a class="nav-link" href="userlogin.html" style="color: aqua;font-size: larger;">Login<i class="bi bi-box-arrow-in-right"></i></a>
+                </span> -->
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 align="center">Register Basic Plan</h2>
+        <form action="basic.php" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <div id="name"></div>
+            </div>
+            <div class="form-group">
+                <label for="currentWeight">Current Weight (kg):</label>
+                <input type="number" id="currentWeight" name="currentWeight" required>
+        
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            <div class="form-group">
+                <label for="bmi">BMI:</label>
+                <input type="number" id="bmi" name="bmi" readonly>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender">
+                    <option>--Select--</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <div id="mnum"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="mail"></div>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="amount" id="amount" name="amount" value="₹2000">
+            </div>
+            <div class="form-group">
+                <label for="healthProblems">Health Problems:</label>
+                <select id="healthProblems" name="healthProblems" required>
+                    <option value="none">None</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-info">Proceed to Pay <b style="padding:5px;background-color: blue;border-radius: 10px;">₹2000</b> </button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullName").value;
+            var currentWeight = document.getElementById("currentWeight").value;
+            var height = document.getElementById("height").value;
+            var age = document.getElementById("age").value;
+            var address = document.getElementById("address").value;
+            var city = document.getElementById("city").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var healthProblems = document.getElementById("healthProblems").value;
+
+            
+            if (fullName == "" || currentWeight == "" || height == "" || age == "" || address == "" || city == "" || phone == "" || email == "" || healthProblems == "none") {
+                alert("All fields must be filled out");
+                return false;
+            }
+
+            if (isNaN(currentWeight) || currentWeight <= 0 || isNaN(height) || height <= 0 || isNaN(age) || age <= 0) {
+                alert("Please enter valid numerical values for weight, height, and age");
+                return false;
+            }
+
+            return true;
+        }
+
+        function calculateBMI() {
+            var weight = document.getElementById("currentWeight").value;
+            var height = document.getElementById("height").value;
+            var bmiField = document.getElementById("bmi");
+
+            if (weight && height) {
+                var bmi = (weight / ((height / 100) ** 2)).toFixed(2);
+                bmiField.value = bmi;
+            } else {
+                bmiField.value = "";
+            }
+        }
+
+        // Attach calculateBMI function to the input fields
+        document.getElementById("currentWeight").addEventListener("input", calculateBMI);
+        document.getElementById("height").addEventListener("input", calculateBMI);
+    </script>
+</body>
+</html>

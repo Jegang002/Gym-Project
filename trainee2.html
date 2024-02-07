@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Trainee Booking Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f7f7f7; */
+    background-image: url('./images/backtrain2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.888);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    align-items: center;
+}
+
+
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       
+            <h2 align="center" style="color: #45a049;"><u>Gym Trainee Booking Form</u></h2>
+       
+        
+        <form action="trainee2.php" method="post">
+            <div class="form-group">
+                <label for="username">Trainer Name:</label>
+                <input type="text" id="trainer_name" name="trainer_name" value="Ip Mohan" readonly>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="fromDate">From Date:</label>
+                <input type="date" id="fromDate" name="fromDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="fees">Fees:</label>
+                <input type="text" id="fees" name="fees" value="₹1200" readonly>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
